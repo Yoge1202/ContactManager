@@ -1,0 +1,119 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body, html {
+  height: 100%;
+
+} */
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Use full-screen flexbox to center */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Form container */
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+/* Form layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Group label + input with icon */
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background-color: #fafafa;
+}
+
+.input-group svg {
+  margin-right: 10px;
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+.contact-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #000; /* Make input text black */
+
+}
+
+/* Button */
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Success message */
+.welcome {
+  font-size: 1.1rem;
+  color: #28a745;
+  margin-bottom: 1.5rem;
+}
+
+/* List of contacts */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.contact-list li {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  padding: 1rem;
+}
